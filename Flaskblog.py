@@ -17,7 +17,7 @@ posts = [
     },
 ]
 
-
+# Navigation Start
 @app.route("/")
 @app.route("/home")
 def home():
@@ -27,7 +27,7 @@ def home():
 @app.route("/about")
 def about():
     return render_template("about.html", title='About')
-
+# Navigation End
 
 if __name__ == "__main__":
     app.run(debug=True)
